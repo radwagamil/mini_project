@@ -36,11 +36,6 @@ switch ($method) {
     if(count($errors) == 0){
       $conn = db_connect();
 
-      if(!$conn){
-        echo "error";}
-      else {
-        echo "connected";
-      }
 
     $sql = "INSERT INTO contact"." (first_name,last_name)"." VALUES ('".$_POST['fname']."' , '".$_POST['lname']."');";
 
